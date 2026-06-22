@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Church Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav id="navbar" class="active">
+
+<div class="logo">
+<img src="images/logo.png" alt="Church Logo">
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+</ul>
+
+</nav>
+
+<section style="padding-top:150px;">
+
+<h2>Church Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/gallery1.jpg" onclick="openImage(this.src)">
+<img src="images/gallery2.jpg" onclick="openImage(this.src)">
+<img src="images/gallery3.jpg" onclick="openImage(this.src)">
+<img src="images/gallery4.jpg" onclick="openImage(this.src)">
+<img src="images/gallery5.jpg" onclick="openImage(this.src)">
+<img src="images/gallery6.jpg" onclick="openImage(this.src)">
+
+</div>
+
+</section>
+
+<div id="imageModal" class="modal">
+
+<span class="close" onclick="closeImage()">
+&times;
+</span>
+
+<img id="modalImg">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
